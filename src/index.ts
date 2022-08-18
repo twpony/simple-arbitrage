@@ -31,6 +31,8 @@ if (FLASHBOTS_RELAY_SIGNING_KEY === "") {
 
 const HEALTHCHECK_URL = process.env.HEALTHCHECK_URL || ""
 
+
+
 const provider = new providers.StaticJsonRpcProvider(ETHEREUM_RPC_URL);
 
 const arbitrageSigningWallet = new Wallet(PRIVATE_KEY);
