@@ -65,7 +65,7 @@ async function main() {
     // to get the best cross market
     const bestCrossedMarkets = await arbitrage.evaluateMarkets(markets.marketsByToken);
     if (bestCrossedMarkets.length === 0) {
-      console.log("No crossed markets")
+      console.log("No crossed markets ")
       return
     }
     // print every best cross market info 

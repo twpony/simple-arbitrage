@@ -35,7 +35,7 @@ export abstract class EthMarket {
   constructor(marketAddress: string, tokens: Array<string>, protocol: string) {
     this._marketAddress = marketAddress;
     this._tokens = tokens
-    this._protocol = protocol;
+    this._protocol =   protocol;
   }
 
 

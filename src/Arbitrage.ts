@@ -100,11 +100,10 @@ export class Arbitrage {
     )
   }
 
-
   //@audit params token's market address
   //@audit return to get the detail of cross market detail
   async evaluateMarkets(marketsByToken: MarketsByToken): Promise<Array<CrossedMarketDetails>> {
-    const bestCrossedMarkets = new Array<CrossedMarketDetails>()
+    const bestCrossedMarkets =   new Array<CrossedMarketDetails>()
 
     // every token will have one best market pair
     for (const tokenAddress in marketsByToken) {

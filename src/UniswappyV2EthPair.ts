@@ -17,7 +17,7 @@ const blacklistTokens = [
 ]
 
 //@audit MarketsBytoken: token address to map the Array of EthMarket
-interface GroupedMarkets {
+interface GroupedMarkets {  
   marketsByToken: MarketsByToken;
   allMarketPairs: Array<UniswappyV2EthPair>;
 }
